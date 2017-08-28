@@ -96,6 +96,10 @@ var cos;
       },
       //生成要上传的图片列表
       submit(){
+        if(!this.url){
+          this.errText = "请填写需要上传的腾讯云url";
+          return
+        }
         this.errText = ''
         this.fileList = [];
         if(this.file.length === 0){
@@ -152,6 +156,9 @@ var cos;
         return name;
       },
       upload () {
+        if(!this.url){
+          return
+        }
         var _this = this;
         _this.$jsonp(_this.url,null,function(err,data){
           if(err){

@@ -1,9 +1,9 @@
 {
   "name": "img-upload-vue2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Vue.js project",
   "author": "lpengfei <lpengfei66@163.com>",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
